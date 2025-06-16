@@ -1,0 +1,21 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2025-04-29 00:00:24
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2025-04-29 00:00:23 127.0.0.1 GET /de/blog - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 105
+2025-04-29 00:01:14 127.0.0.1 GET /upload/content/news/news.jpg - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/100.0.9713.716+Safari/537.36 - 404 0 0 24
+2025-04-29 00:02:36 127.0.0.1 GET /de/blog/project1 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 107
+2025-04-29 00:04:38 127.0.0.1 GET /de/blog/project2 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 95
+2025-04-29 00:04:51 127.0.0.1 GET /de/blog/news1 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 92
+2025-04-29 00:04:59 127.0.0.1 GET / - 443 - 127.0.0.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 164
+2025-04-29 00:05:03 127.0.0.1 GET /de/blog/project3 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 97
+2025-04-29 00:06:31 127.0.0.1 GET /robots.txt - 443 - 127.0.0.1 Mozilla/5.0+AppleWebKit/537.36+(KHTML,+like+Gecko;+compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm)+Chrome/116.0.1938.76+Safari/537.36 - 301 0 0 224
+2025-04-29 00:06:33 127.0.0.1 GET /robots.txt - 443 - 127.0.0.1 Mozilla/5.0+AppleWebKit/537.36+(KHTML,+like+Gecko;+compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm)+Chrome/116.0.1938.76+Safari/537.36 - 200 0 0 227
+2025-04-29 00:06:40 127.0.0.1 GET / - 443 - 127.0.0.1 Mozilla/5.0+AppleWebKit/537.36+(KHTML,+like+Gecko;+compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm)+Chrome/116.0.1938.76+Safari/537.36 - 301 0 0 151
+2025-04-29 00:08:28 127.0.0.1 GET /de/blog/project4 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 110
+2025-04-29 00:09:04 127.0.0.1 POST /de/blog/jobs - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 109
+2025-04-29 00:10:52 127.0.0.1 HEAD /de/blog/project4 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 102
+2025-04-29 00:11:05 127.0.0.1 GET /de/blog/project4 - 443 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:133.0)+Gecko/20100101+Firefox/133.0 - 200 0 0 100
+2025-04-29 00:12:03 127.0.0.1 GET /de/blog/project4 - 443 - 127.0.0.1 Mozilla/5.0+AppleWebKit/537.36+(KHTML,+like+Gecko;+compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm)+Chrome/116.0.1938.76+Safari/537.36 - 200 0 0 217
+2025-04-29 00:12:05 127.0.0.1 GET /DE/customer - 443 - 127.0.0.1 Mozilla/5.0+(compatible;+AhrefsBot/7.0;++http://ahrefs.com/robot/) - 401 0 0 103
+2025-04-29 00:12:48 127.0.0.1 GET /de/jobs - 443 - 127.0.0.1 Sogou+web+spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07) - 501 0 0 308

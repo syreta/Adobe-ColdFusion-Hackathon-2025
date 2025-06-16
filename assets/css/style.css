@@ -1,0 +1,209 @@
+:root {
+	--green-highlight: #91b508;
+	--green-accent: #377a1d;
+	--text-main-color: #fff;
+	--text-secondary-color: #6C7293;
+	--bg-main : #000;
+	--bg-secondary: #191c24;
+	--bg-highlight: #384234;
+}
+
+/* --- Basic Configuration --- */
+body {
+	background-color: var(--bg-main);
+}
+body * {
+	color: var(--text-main-color);
+}
+a {
+	text-decoration: none;
+}
+.text-c-main {
+	color: var(--text-main-color);
+}
+.text-c-secondary {
+	color: var(--text-secondary-color);
+}
+.bg-c-main {
+	background-color: var(--bg-main);
+}
+.bg-c-secondary {
+	background-color: var(--bg-secondary);
+}
+.bg-c-highlight {
+	background-color: var(--bg-highlight);
+}
+.btn-main {
+	background-color: var(--green-highlight);
+	color: var(--text-main-color);
+	transition: 250ms all ease;
+}
+.btn-main:hover {
+	background-color: var(--green-accent);
+	color: var(--text-main-color);
+}
+i.circle-Icon {
+	background-color: var(--bg-main);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 5px;
+}
+/* --- Basic Configuration --- */
+
+/* --- Sidepanel --- */
+.sidepanel-inner {
+	background-color: #191c24;
+	max-width: 250px;
+	left: 0px;
+	top: 0;
+	transition: left 350ms ease;
+	z-index: 50;
+}
+.sidepanel-inner .item {
+	font-size: 16px;
+	font-weight: 600;
+}
+.sidepanel-inner .item > div {
+	border-left: var(--bg-secondary) 2px solid;
+	background-color: var(--bg-secondary);
+	transition: background-color 250ms ease
+				border-left 250ms ease;
+}
+.sidepanel-inner .item:hover > div,
+.sidepanel-inner .item.active > div {
+	border-radius: 0 30px 30px 0;
+	border-left: var(--green-highlight) 2px solid;
+	background-color: var(--bg-main);
+}
+.sidepanel-inner .item:hover .inner-Text,
+.sidepanel-inner .item.active .inner-Text {
+	color: var(--green-highlight);
+	transition: all 150ms ease;
+}
+.sidepanel-inner .item i {
+	transition: all 150ms ease;
+}
+.sidepanel-inner .item:hover i,
+.sidepanel-inner .item.active i {
+	color: var(--green-highlight);
+}
+#sidepanel .sidepanel-inner.closed {
+	left: -250px;
+}
+/* --- Sidepanel --- */
+
+/* --- Content Container --- */
+#content {
+	padding-left: 250px;
+	padding-top: 65px;
+	transition: all 350ms ease;
+}
+#sidepanel:has( .sidepanel-inner.closed) + #content{
+	padding-left: 0;
+}
+
+@media (max-width: 992px) {
+	#content {
+		padding-left: 0;
+		transition: all 350ms ease;
+	}
+}
+/* --- Content Container --- */
+
+/* --- Header --- */
+header {
+	height: 65px;
+	width: 88%;
+	background-color: var(--bg-secondary);
+	z-index: 60;
+	top: 0;
+	transition: 350ms ease width;
+}
+#sidepanel:has( .sidepanel-inner.closed) + #content header {
+	width: 100%;
+}
+header .burger-menue {
+	border-radius: 50%;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	background-color: var(--bg-main);
+	cursor: pointer;
+}
+header .burger-menue div {
+	height: 2px;
+	width: 50%;
+	margin: 2px 0;
+	background-color: var(--green-highlight);
+	transition: all 150ms ease;
+}
+header .burger-menue:hover div {
+	background-color: var(--green-accent);
+}
+header .icon img {
+	max-height: 80px;
+}
+/* --- Header --- */
+
+/* --- Metric Cards --- */
+.metric-cards i {
+	font-size: 36px;
+	color: var(--green-highlight);
+}
+.metric-cards .value-text {
+	font-weight: 700;
+}
+/* --- Metric Cards --- */
+
+/* --- Graph Cards --- */
+.graph-cards .inner {
+	background-color: var(--bg-secondary);
+}
+.graph-cards .inner .header {
+	font-weight: 700;
+}
+[id$="-tooltip"] {
+	z-index: 200;
+}
+/* --- Graph Cards --- */
+
+/* --- Datatable --- */
+.datatable .header {
+	font-weight: 600;
+}
+table {
+	border: 1px var(--bg-main) solid;
+}
+table :is(th,td,tr) {
+	padding: 10px;
+	border: 1px var(--bg-main) solid;
+}
+table td {
+	color: var(--text-secondary-color);
+	min-width: 125px;
+}
+.datatable .dt-layout-table {
+	width: 100%;
+	margin: 0;
+}
+/* --- Datatable --- */
+
+/* --- Dataselect --- */
+.file-select .inner {
+	overflow-x: auto;
+}
+.file-select .inner table {
+	width: 100%;
+}
+.file-select tr.highlight td {
+	color: #fff;
+}
+/* --- Dataselect --- */

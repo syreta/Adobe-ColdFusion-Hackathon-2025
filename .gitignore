@@ -1,0 +1,14 @@
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs & Editors
+.vscode/
+.idea/
+
+# Files in /data/ folder except sample/demo
+/data/*
+!/data/sample-*.log
